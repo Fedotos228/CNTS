@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/head.html', {'title': 'Grupele de sânge şi compatibilitatea lor'})
+<body>
+   <div class="wrapper">
+       @@include('./components/header.html')
+       <main>
+            <section class="blood-group">
+                <div class="blood-group__container">
+                    @@include('./components/page-title.html', {'pagetitle': 'Grupele de sânge şi compatibilitatea lor'})
+                    <div class="list-block">
+                        <div class="line-title">
+                            <h4>Grupele de sânge au fost descoperite în anul 1900</h4>
+                        </div>
+                        <p>
+                            Americanul de origine austriaca Karl Landsteiner , patologist si imunologist, descopera în anul 1900, trei tipuri de sînge uman, ulterior numite A, B si O. În anul 1902 
+                            el descopera si tipul nr. patru ce primeste numele AB.
+                        </p>
+                        <p>Karl Landsteiner a cîstigat în 1930 Premiul NOBEL pentru medicina. El a descoperit cele patru mari grupe de sînge.</p>
+                        <p>
+                            Desi tot sîngele uman pare la fel, atunci cînd este testat folosind substante speciale, diferentele devin vizibile. Principalele grupe de celule rosii sunt AII, BIII, ABIV, si OI. 
+                            Literele simbolizeaza doi antigeni (substante care pot fi atacate de catre sistemul imunitar) denumite A si B.
+                        </p>
+
+                        <ul>
+                            <li>Grupa de sînge A, are doar antigenul A</li>
+                            <li>Grupa de sînge B, are doar antigenul B</li>
+                            <li>Grupa AB ii are pe amîndoi</li>
+                            <li>Grupa O nu are nici unul</li>
+                        </ul>
+                        <p>Oamenii poseda pe suprafata globulelor rosii diferite structuri proteice (antigene) care determinî atît grupele sanguine cît si Rh-ul persoanei respective.Grupele de sînge clasificate mai departe ca Rh-pozitiv si Rh-negativ poarta denumirea de tipuri de sînge.</p>
+                        <p>Fiecare grupa sanguina poate fi Rh pozitiv sau Rh negativ. Rh-ul este determinat de o alta proteina, factorul Rh (D antigen). Daca acest factor este prezent pe suprafata eritrocitelor persoana respectiva este Rh pozitiva, daca nu, persoana respectiva este Rh negativa.</p>
+                    </div>
+                    <div class="blood-group__tables">
+                        <div class="line-title">
+                            <h4>Moştenirea sângelui</h4>
+                        </div>
+                        <p>Ca si culoarea ochilor, grupele de sînge se mostenesc genetic de la parinti la copii. Orice grupa de sînge ai avea A,B, AB sau O, se bazeaza pe grupele de sînge ale mamei si tatalui tau.</p>
+                        <p><i>Nota: Dificultatile de testare pot cauza exceptii de la regulile de mai sus. Doar tipurile AB si O nu sunt suficiente pentru a proba sau nega paternitatea ori maternitatea.</i></p>
+                        <table>
+                            <tr>
+                                <td colspan="2" rowspan="2" style="width: 10%;"></td>
+                                <td style="width: 10.4%;"><strong>Părinte 1</strong></td>
+                                <td>A B</td>
+                                <td>A B</td>
+                                <td>A B</td>
+                                <td>A B</td>
+                                <td>B</td>
+                                <td>A</td>
+                                <td>A</td>
+                                <td>O</td>
+                                <td>O</td>
+                                <td>O</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Părinte 2</strong></td>
+                                <td>A B</td>
+                                <td>B</td>
+                                <td>A</td>
+                                <td>O</td>
+                                <td>B</td>
+                                <td>B</td>
+                                <td>A</td>
+                                <td>B</td>
+                                <td>A</td>
+                                <td>O</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td rowspan="4" style="width: 10%; background-color: #FFEAEA;">Grupa de sânge posibilă a copilului	</td>
+                                <td style="width: 10.4%; background-color: #FFEAEA;">O</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td>V</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #FFEAEA;">A</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td></td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td></td>
+                                <td>V</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #FFEAEA;">B</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td></td>
+                                <td>V</td>
+                                <td></td>
+                                <td></td>
+                            <tr>
+                                <td style="background-color: #FFEAEA;">A B</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td>V</td>
+                                <td></td>
+                                <td></td>
+                                <td>V</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+       </main>
+       @@include('./components/footer.html')
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js" integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/app.min.js"></script>
+</body>
+</html>

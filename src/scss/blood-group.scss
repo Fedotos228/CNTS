@@ -1,0 +1,28 @@
+.blood-group{
+    p{
+        color: #4F5256;
+    }
+    table,td{
+        border: 1px solid rgba(0,0,0, 0.1);
+    }
+    table{
+        width: 100%;
+        &:first-of-type{
+            background-color: #FFEAEA;
+            margin: 50px 0  30px;
+        }
+        &:last-of-type{
+            tr{
+
+                &:nth-child(2n + 2){
+                    background-color: #DEEDFF;
+                }
+            }
+        }
+    }
+    td{
+        width: 109px;
+        padding: 15px 20px;
+        text-align: center;
+    }
+}

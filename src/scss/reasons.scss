@@ -1,5 +1,4 @@
 .reasons {
-    @include adaptiv-value('margin-bottom', 60, 40, 1);
     &-text {
         >p {
             line-height: 22px;

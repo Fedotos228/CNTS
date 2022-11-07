@@ -20,6 +20,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-backspace:before {
+    content: "\e902";
+}
+
 .icon-arrow_up:before {
     content: "\e900";
 }
@@ -38,6 +42,10 @@
 
 .icon-arrow_down:before {
     content: "\e905";
+}
+
+.icon-arrow_down:before {
+    content: "\e906";
 }
 
 .icon-pdf:before {

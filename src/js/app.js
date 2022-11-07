@@ -62,10 +62,12 @@ new Swiper('.slider-hero__body ', {
 const pageTitle = document.querySelector('.page-title')
 const subtitle = document.querySelector('.page-title p')
 
-if (subtitle.textContent === '@@subtitle') {
-    subtitle.style.display = 'none'
+if (pageTitle) {
+    console.log('pageTitle', pageTitle)
+    if (subtitle.textContent === '@@subtitle') {
+        subtitle.style.display = 'none'
+    }
 }
-
 
 const navItem = document.querySelectorAll('.nav-list__item')
 
@@ -97,7 +99,16 @@ const accordeonItem = document.querySelectorAll('.accordeon-item')
 
 accordeonItem.forEach(item => {
     const expender = item.querySelector('.accordeon-item__header .expender')
-    item.addEventListener('click', () => {
-        item.classList.toggle('open')
+    const accordeonHeader = item.querySelector('.accordeon-item__header')
+
+    accordeonHeader.addEventListener('click', () => {
+        if (!item.classList.contains('open')) {
+            for (let i = 0; i < accordeonItem.length; i++) {
+                accordeonItem[i].classList.remove('open')
+            }
+            item.classList.add('open')
+        }else{
+            item.classList.remove('open')
+        }
     })
 });

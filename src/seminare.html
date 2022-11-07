@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/head.html', {'title': 'Seminare'})
+<body>
+   <div class="wrapper">
+       @@include('./components/header.html')
+       <main>
+            <section class="seminare">
+                <div class="seminare__container">
+                    @@include('./components/page-title.html', {'pagetitle': 'Seminare'})
+                    <p>Seminarele efectuate de Centrul Naţional de Transfuzie a Sîngelui, sau alte Organizaţii, dar pe tematici care au incidenţă directă la Serviciul de Sînge ajută mult la dezvoltarea cunoştinţelor în toate domeniile aplicabile în ramura hemotransfuziei.</p>
+                    <div class="documents">
+                        <div class="documents__link documents__link--large">
+                            <i class="icon-pdf"></i>
+                            <p>Ordin Nr. 139 din data de 19.02.2021 Cu privire la organizarea ședinței de totalizare a activității serviciului de sînge</p>
+                        </div>
+                        <div class="documents__link documents__link--large">
+                            <i class="icon-pdf"></i>
+                            <p>Dispoziție Nr. 181-d din data de 22.03.2021 Cu privire la organizarea conferinței on-line „Managementul recrutării populației la donarea voluntară și sistematică de sânge/componente sanguine”</p>
+                        </div>
+                        <div class="documents__link documents__link--large">
+                            <i class="icon-pdf"></i>
+                            <p>Dispoziție nr. 325-d Cu privire la rezultatele Studiului de evaluare cunoștițe, atitudini și practici privind donarea voluntară și neremunerată de sînge/componente sanguine</p>
+                        </div>
+                        <div class="documents__link documents__link--large">
+                            <i class="icon-pdf"></i>
+                            <p>Dispoziție Nr. 171-d din data de 01.03.2022 Cu privire la organizarea conferinței „Hemovigilența – instrument eficient pentru îmbunătățirea siguranței hemotransfuziilor”</p>
+                        </div>
+                    </div>
+                </div>
+            </section>   
+       </main>
+       @@include('./components/footer.html')
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js" integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/app.min.js"></script>
+</body>
+</html>
