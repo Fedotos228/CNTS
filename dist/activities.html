@@ -13,11 +13,13 @@
        <header class="header">
     <div class="header__top header-top">
         <div class="header__container">
-            <a href="/">
-                <img src="img/logo.png" alt="logo">
+            <a href="/" class="header__logo">
+                <img src="img/logo.png" alt="logo" />
             </a>
             <h2>Centrul național de transfuzie a sângelui</h2>
-            <img src="img/stema.png" alt="">
+            <a href="/" class="header__logo">
+                <img src="img/stema.png" alt="stema" />
+            </a>
         </div>
     </div>
 
@@ -30,7 +32,7 @@
                     </li>
                     <li class="nav-list__item with-submenu">
                         <a href="#">Despre noi</a>
-                        <span class="icon-arrow_down"></span>
+                        <span class="icon-arrow__down"></span>
                         <ul class="nav-list__sublist sublist">
                             <li class="sublist__item">
                                 <a href="#">Subnav item</a>
@@ -48,7 +50,7 @@
                     </li>
                     <li class="nav-list__item with-submenu">
                         <a href="#">transparență</a>
-                        <span class="icon-arrow_down"></span>
+                        <span class="icon-arrow__down"></span>
                         <ul class="nav-list__sublist sublist">
                             <li class="sublist__item">
                                 <a href="#">Subnav item</a>
@@ -66,19 +68,19 @@
                     </li>
                     <li class="nav-list__item">
                         <a href="#">legislație</a>
-                        <span class="icon-arrow_down"></span>
+                        <span class="icon-arrow__down"></span>
                     </li>
                     <li class="nav-list__item">
                         <a href="#">Pentru donatori de sânge</a>
-                        <span class="icon-arrow_down"></span>
+                        <span class="icon-arrow__down"></span>
                     </li>
                     <li class="nav-list__item">
                         <a href="#">Pentru specialiști</a>
-                        <span class="icon-arrow_down"></span>
+                        <span class="icon-arrow__down"></span>
                     </li>
                     <li class="nav-list__item">
                         <a href="#">noutăți</a>
-                        <span class="icon-arrow_down"></span>
+                        <span class="icon-arrow__down"></span>
                     </li>
                     <li class="nav-list__item">
                         <a href="#">Contacte</a>
@@ -87,22 +89,22 @@
                 <div class="language">
                     <div class="language-current">
                         <div class="current">RO</div>
-                        <span class="icon-arrow_down"></span>
+                        <span class="icon-arrow__down"></span>
                     </div>
                     <ul class="language-list">
-                        <li class="language-list__item">
-                            EN
-                        </li>
-                        <li class="language-list__item">
-                            RU
-                        </li>
+                        <li class="language-list__item">EN</li>
+                        <li class="language-list__item">RU</li>
                     </ul>
                 </div>
             </nav>
+
+            <button type="button" class="burger">
+                <span></span>
+            </button>
         </div>
     </div>
 
-    <div class="header__bottom header-bottom">
+    <div class="header__bottom header-bottom desktop">
         <div class="header__container">
             <ul class="header-bottom__nav">
                 <li>
@@ -123,12 +125,40 @@
                 </li>
             </ul>
             <div class="header-bottom__search">
-                <input type="text" class="search" placeholder="Caută">
+                <input type="text" class="search" placeholder="Caută" />
                 <span class="icon-search"></span>
             </div>
         </div>
     </div>
 </header>
+
+<div class="header__bottom header-bottom desktop--small">
+    <div class="header__container">
+        <ul class="header-bottom__nav">
+            <li>
+                <span class="icon-calendar"></span>
+                <a href="#">Programare donare sânge</a>
+            </li>
+            <li>
+                <span class="icon-review"></span>
+                <a href="#">Evaluare grad de satisfacție</a>
+            </li>
+            <li>
+                <span class="icon-question"></span>
+                <a href="#">Întrebări frecvente</a>
+            </li>
+            <li>
+                <span class="icon-text"></span>
+                <a href="#">Depune petiție / sugestie</a>
+            </li>
+        </ul>
+        <div class="header-bottom__search">
+            <input type="text" class="search" placeholder="Caută" />
+            <span class="icon-search"></span>
+        </div>
+    </div>
+</div>
+
        <main>
             <section class="activities">
                 <div class="activities__container">
