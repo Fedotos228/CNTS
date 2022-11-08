@@ -1625,3 +1625,29 @@ section {
     width: 100%;
   }
 }
+
+.contacts__body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 20px;
+}
+.contacts__table .line-title h4 {
+  color: #F44545;
+}
+.contacts__table table,
+.contacts__table td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.contacts__table table {
+  width: 100%;
+}
+.contacts__table tr td {
+  height: 80px;
+  vertical-align: middle;
+  padding: 0 15px;
+}
+.contacts__table tr td:first-child {
+  max-width: 450px;
+  font-weight: 600;
+  line-height: 150%;
+}

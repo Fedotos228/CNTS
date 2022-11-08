@@ -1,0 +1,33 @@
+.contacts {
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 20px;
+    }
+    &__table {
+        .line-title {
+            h4 {
+                color: $redsecond;
+            }
+        }
+        table,
+        td {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+        }
+        tr {
+            td {
+                height: 80px;
+                vertical-align: middle;
+                padding: 0 15px;
+                &:first-child {
+                    max-width: 450px;
+                    font-weight: 600;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}
