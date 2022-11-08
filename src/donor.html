@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/head.html', {'title': 'Cine poate fi donator'})
+
+<body>
+    <div class="wrapper">
+        @@include('./components/header.html')
+        <main>
+            <section class="donor">
+                <div class="donor__container">
+                    @@include('./components/page-title.html', {'pagetitle': 'Cine poate fi donator'})
+                    <div class="donor__block">
+                        <div class="line-title">
+                            <h4>Ce trebuie să cunoască persoanele care pot fi donatori de sânge:</h4>
+                        </div>
+                        <div class="checkbox-body">
+                            <svg class="checkbox-symbol">
+                                <symbol id="check" viewbox="0 0 12 10">
+                                  <polyline
+                                    points="1.5 6 4.5 9 10.5 1"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                  ></polyline>
+                                </symbol>
+                            </svg>
+                            <div class="checkbox-container">
+                                <input class="checkbox-input" id="age" type="checkbox" />
+                                <label class="checkbox" for="age">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                        <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Vârsta cuprinsa între 18-60 ani;</span>
+                                </label>
+                                <input class="checkbox-input" id="weight" type="checkbox" />
+                                <label class="checkbox" for="weight">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                        <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Greutate corporala minima 50 kg;</span>
+                                </label>
+                                <input class="checkbox-input" id="tension" type="checkbox" />
+                                <label class="checkbox" for="tension">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                        <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Tensiunea arteriala : maxima nu depaseste 
+                                        180 mmHg, iar minima 100 mmHg;
+                                        </span>
+                                </label>
+                                <input class="checkbox-input" id="himoglobin" type="checkbox" />
+                                <label class="checkbox" for="himoglobin">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                        <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Valoarea hemoglibinei nu este mai joasa de 125g/l pentru femei si nu mai putin de 135 pentru barbati;</span>
+                                </label>
+                                <input class="checkbox-input" id="afectiuni" type="checkbox" />
+                                <label class="checkbox" for="afectiuni">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                        <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Nu prezinta afectiuni de genul: boli de piele, sechele pulmonare, operatie de ulcer, tendinta de sîngerare anormala, s.a;</span>
+                                </label>
+                                <input class="checkbox-input" id="intervalul" type="checkbox" />
+                                <label class="checkbox" for="intervalul">
+                                    <span>
+                                        <svg width="12px" height="10px">
+                                        <use xlink:href="#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Intervalul de timp între doua donari de sânge nu poate fi mai mic de 60 zile.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donor__block">
+                        <div class="line-title">
+                            <h4>La o donare se recolteaza 450±10% mililitri sânge:</h4>
+                        </div>
+                        <p>Controlul si triajul medical ai celor care doneaza trebuie sa urmareasca prevenirea oricarui risc, atît pentru cel care va dona cît si pentru beneficiarii acestui produs biologic. De aceea, controlul medical se bazeaza pe trei
+                            examene (clinic, de laborator si epidemiologic), prin care se pot stabili contraindicatiile donarii de sînge. Aceste contraindicatii pot fi: absolute (din cauze care exclud definitiv pe individ de la donare, cum sînt hepatita,
+                            tuberculoza, sifilisul, rezecarea stomacului, maladia mitrala, cancerul operat si vindecat, etc.), relative (din cauze care pot fi variabile, cum este tensiunea arteriala de o anumita valoare, care poate ulterior scadea, greutate
+                            ponderala sub 50 kg, care ulterior poate creste, etc.) si temporare (din cauze care tin de anumite fenomene ciclice, cum sînt perioada menstruala, sarcina, alaptarea, precum si o stare febrila provocata de o viroza respiratorie
+                            trecatoare, etc.).</p>
+                        <p>Donarea de sînge este permisa numai persoanelor în stare de sanatate, între 18 si 60 de ani (întrucît în afara acestor vîrste nu exista garantia unui raspuns armonios din partea organismului fata de pierderea a 450 ml de sînge),
+                            celor care nu au valorile tensiunii arteriale peste 180 mm Hg sau sub 100 mm Hg, femeilor în afara sarcinii sau a lauziei, celor ce nu manifesta stari emotionale exagerate, teama persistenta fata de actul donarii sau o stare
+                            de oboseala, nu au consumat alcool sau o masa bogata în grasimi înainte de a se prezenta la recoltare, au de la ultima donare de sînge minimum 60 de zile, nu au avut în ultimul timp pierderi de sînge si nu au fost supusi unor
+                            interventii chirurgicale.</p>
+                        <p>Si profesiunea donatorului poate constitui uneori o cauza a respingerii acestuia de la recoltare, cînd exista pericolul potential al infectiilor (cazul mulgatorilor, îngrijitorilor de animale, maturatorilor) sau al unei oboseli
+                            fizice (soferi pe mijloace de transport în comun, piloti, operatori la masini grele).</p>
+                    </div>
+                    <div class="donor__block">
+                        <div class="line-title">
+                            <h4>Restrictiile de mai sus privind donarea de sange se explica astfel:</h4>
+                        </div>
+                        <div class="list-block">
+                            <ul>
+                                <li>Starile emotionale exagerate sunt o expresie a afectarii sistemului nervos, cel care coordoneaza repartitia sangelui dupa necesitati, iar in acest caz raspunsul poate fi inadecvat.</li>
+                                <li>Teama de actul donarii poate duce la o tulburare a circulatiei sîngelui, manifestata printr-o lipotimie (lesin).</li>
+                                <li>Starea de oboseala (dupa munca în schimbul de noapte sau dupa eforturi mari) poate constitui o cauza a adaptarii necorespunzatoare a circulatiei sîngelui. Intervalul de minimum 45 de zile de la ultima recoltare este considerat
+                                    suficient pentru refacerea tuturor elementelor sîngelui si rezervelor organismului pierdute cu ocazia ultimei recoltari.</li>
+                                <li>Gravida nu poate dona sînge, întrucît organismul sau trebuie sa acopere si nevoile viitorului copil, iar interdictia se prelungeste 18 luni dupa nastere, pentru ca organismul mamei sa-si refaca pierderile.</li>
+                            </ul>
+                            <p>O priza obisnuita de sînge este de 450 ml, cantitate care nu presupune nici un risc pentru donator, deoarece organismul are permanent în rezerva circa 300-400 ml de sînge (pe care îl foloseste cînd se depun eforturi mari),
+                                precum si capacitatea de a reface repede sîngele donat (cantitativ în 1- 2 ore), fara a fi necesar un tratament sau o alimentatie speciala , totul depinzînd de modul în care organismul repartizeaza diversele cantitati de
+                                sînge în raport de necesitati si de promptitudinea cu care se face aceasta permanenta adaptare.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('./components/footer.html')
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js" integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

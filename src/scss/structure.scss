@@ -1,8 +1,17 @@
+.structure {
+    .documents-grid {
+        @media (max-width: mobileSmall) {}
+    }
+}
+
 .contacts {
     &__body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 20px;
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+        }
     }
     &__table {
         .line-title {
@@ -22,11 +31,30 @@
                 height: 80px;
                 vertical-align: middle;
                 padding: 0 15px;
+                @media (max-width: $mobileSmall) {
+                    font-size: 14px;
+                    padding: 10px
+                }
                 &:first-child {
                     max-width: 450px;
                     font-weight: 600;
                     line-height: 150%;
+                    @media (max-width: $mobileSmall) {
+                        max-width: none;
+                        width: 70%;
+                    }
                 }
+                &:last-child {
+                    @media (max-width: $mobileSmall) {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+        &.grid-row-2 {
+            grid-row: 4 span;
+            @media (max-width: $mobile) {
+                grid-row: 1 span;
             }
         }
     }
