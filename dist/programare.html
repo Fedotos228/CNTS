@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
-    <title>CNTS | Actele Ministerului Sănătății ce reglementează activitatea de donare și transfuzie de sânge</title>
+    <title>CNTS | Sângele și originea lui</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.css" integrity="sha512-wbWvHguVvzF+YVRdi8jOHFkXFpg7Pabs9NxwNJjEEOjiaEgjoLn6j5+rPzEqIwIroYUMxQTQahy+te87XQStuA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
-<body>
-   <div class="wrapper">
-       <header class="header">
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
     <div class="header__top header-top">
         <div class="header__container">
             <a href="/" class="header__logo">
@@ -159,10 +160,10 @@
     </div>
 </div>
 
-       <main>
-            <section class="actele">
-                <div class="actele__container">
-                    <div class="page-title">
+            <main>
+                <div class="schedule">
+                    <div class="schedule__container">
+                        <div class="page-title">
     <ul class="breadcrumb">
         <li>
             <a href="#">Pentru donatori</a>
@@ -172,62 +173,199 @@
             <a href="#">Sângele și originea lui</a>
         </li>
     </ul>
-    <h3>Actele Ministerului Sănătății ce reglementează activitatea de donare și transfuzie de sânge</h3>
-    <p>@@subtitle</p>
+    <h3>Programare donare sânge</h3>
+    <p>Forma de înregistrare la donarea de sînge/plasma este o etapă inițială obligatorie care prevede colectarea datelor cu caracter personal care urmează sa fie păstrate în baza de date a Serviciului de Sânge și în caz de necesitate transmise Instituților Medico Sanitare conform legii în vigoare .</p>
 </div>
 
-                    <div class="actele-sort">
-                        <ul class="actele-sort__list no-scrollbar">
-                            <li class="actele-sort__button active"><button>2009</button></li>
-                            <li class="actele-sort__button"><button>2010</button></li>
-                            <li class="actele-sort__button"><button>2011</button></li>
-                            <li class="actele-sort__button"><button>2012</button></li>
-                            <li class="actele-sort__button"><button>2013</button></li>
-                            <li class="actele-sort__button"><button>2014</button></li>
-                            <li class="actele-sort__button"><button>2015</button></li>
-                            <li class="actele-sort__button"><button>2016</button></li>
-                            <li class="actele-sort__button"><button>2017</button></li>
-                            <li class="actele-sort__button"><button>2018</button></li>
-                            <li class="actele-sort__button"><button>2019</button></li>
-                            <li class="actele-sort__button"><button>2020</button></li>
-                            <li class="actele-sort__button"><button>2021</button></li>
-                            <li class="actele-sort__button"><button>2022</button></li>
-                        </ul>
-                    </div>
-                    <div class="documents">
-                        <a href="#" class="documents__link documents__link--large">
-                            <i class="icon-pdf"></i>
-                            <p>Ordin nr. 316 din anul 2007 Cu privire la implimentarea Sistemuluide ca calitate in Serviciul de Singe</p>
-                        </a>
-                        <a href="#" class="documents__link documents__link--large">
-                            <i class="icon-pdf"></i>
-                            <p>2. Compendium Metodelor de control a calităţii preparatelor imunobiologice din sânge(fizico-chimice, imunochimice, biologice şi cercetările hemostazei).</p>
-                        </a>
-                        <a href="#" class="documents__link documents__link--large">
-                            <i class="icon-pdf"></i>
-                            <p>3. Ordin nr. 105 din 23.04.2009 cu privire la aprobarea Ghidurilor de activitate hemotransfuzională</p>
-                        </a>
-                        <a href="#" class="documents__link documents__link--large">
-                            <i class="icon-pdf"></i>
-                            <p>4. Ghidul privind organizarea evenimentului de donare a sîngelui în cadrul colectelor mobile</p>
-                        </a>
-                        <a href="#" class="documents__link documents__link--large">
-                            <i class="icon-pdf"></i>
-                            <p>5. Ghid privind organizarea preparării şi utilizării sângelui autolog şi componentelor lui.</p>
-                        </a>
-                        <a href="#" class="documents__link documents__link--large">
-                            <i class="icon-pdf"></i>
-                            <p>6. Ghid pentru prepararea, utilizarea şi asigurarea calităţii componentelor sanguine.</p>
-                        </a>
-                        <a href="#" class="documents__link documents__link--large">
-                            <i class="icon-pdf"></i>
-                            <p>7. Ordin nr. 161 din data de 10.06.2009 Cu privire la aprobarea indicatorilor de monitorizare și evaluare a activităților Serviciului de Sînge</p>
-                        </a>
+
+                        <form action="#" class="schedule__form">
+                            <span class="form-header">
+                                Câmpurile indicate cu <small>*</small> sunt obligatorii pentru completare
+                            </span>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td><span class="gray">Pentru cine doriţi să donaţi sânge/plasma</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Donator: <small>*</small></th>
+                                        <td>
+                                            <P>
+                                                <label>
+                                                    <input type="radio" name="donator">
+                                                    Rudă
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="donator" >
+                                                    Voluntar
+                                                </label>
+                                            </P>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <span class="gray">
+                                                Indicaţi datele DVS personale
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Numele, Prenumele, Patronimicul: <small>*</small></th>
+                                        <td>
+                                            <input type="text" placeholder="ex. Rusu Alexandru Victor">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sex: <small>*</small></th>
+                                        <td>
+                                            <p>
+                                                <label>
+                                                    <input type="radio" name="sex">
+                                                    Masculin
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="sex" >
+                                                    Femenin
+                                                </label>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                           <span class="gray">Indicaţi corect data, luna, anul de naştere personale (Donarea de sânge este permisă persoanelor între 18 și 60 de ani)</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Data naşterii: <small>*</small></th>
+                                        <td>
+                                            <input type="date" name="birthdate">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <span class="gray">Indicaţi grupa Sanguină şi Rh , conform buletinului de identitate</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sânge: <small>*</small></th>
+                                        <td>
+                                            <p>
+                                                <label>
+                                                    Grupa:
+                                                    <span class="select">
+                                                        <select>
+                                                            <option selected hidden>Nu știu</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                        </select>
+                                                    </span>
+                                                </label>
+                                                <label>
+                                                    Rh:
+                                                    <span class="select">
+                                                        <select>
+                                                            <option selected hidden>Nu știu</option>
+                                                            <option value="pos">+</option>
+                                                            <option value="neg">-</option>
+                                                        </select>
+                                                    </span>
+                                                </label>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Nr. de telefon: <small>*</small></th>
+                                        <td>
+                                            <input type="tel" placeholder="+373 00 000 000">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email: <small>*</small></th>
+                                        <td>
+                                            <input type="email" placeholder="example@gmail.com">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <span class="gray">Indicaţi codul personal (numărul din 13 cifre) din buletinul de identitate</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Buletin: <small>*</small></th>
+                                        <td>
+                                            <input type="text" placeholder="xxxxxxxxxxxxx" >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Data înscrierii: <small>*</small></th>
+                                        <td>
+                                            <p>
+                                                <input type="date" name="register-date">
+                                                <span class="select">
+                                                    <select name="time">
+                                                        <option selected hidden>Ora</option>
+                                                        <option>08:00</option>
+                                                        <option>08:10</option>
+                                                        <option>08:20</option>
+                                                        <option>08:30</option>
+                                                        <option>08:40</option>
+                                                        <option>08:50</option>
+                                                        <option>09:00</option>
+                                                        <option>09:10</option>
+                                                        <option>09:20</option>
+                                                        <option>09:30</option>
+                                                        <option>09:40</option>
+                                                        <option>09:50</option>
+                                                        <option>10:00</option>
+                                                        <option>10:10</option>
+                                                        <option>10:20</option>
+                                                        <option>10:30</option>
+                                                        <option>10:40</option>
+                                                        <option>10:50</option>
+                                                        <option>11:00</option>
+                                                        <option>11:10</option>
+                                                        <option>11:20</option>
+                                                        <option>11:30</option>
+                                                        <option>11:40</option>
+                                                        <option>11:50</option>
+                                                        <option>12:00</option>
+                                                    </select>
+                                                </span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mesajul:</th>
+                                        <td>
+                                            <textarea name="message"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Captcha : *</th>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <button type="submit" class="button button__pink">Trimite formularul</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
                     </div>
                 </div>
-            </section>
-        </main>
-       <footer class="footer">
+            </main>
+            <footer class="footer">
     <div class="footer__container">
         <div class="footer-column">
             <div class="footer-column__list">
@@ -398,8 +536,13 @@
         <p>Drepturi de autor © 2022 CNTS</p>
     </div>
 </footer>
-   </div>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js" integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <script src="js/app.min.js"></script>
-</body>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"
+            integrity="sha512-WlN87oHzYKO5YOmINf1+pSkbt4gm+lOro4fiSTCjII4ykJe/ycHKIaa9b2l9OMkbqEA4NxwTXAGFjSXgqEh19w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="js/app.min.js"></script>
+    </body>
 </html>

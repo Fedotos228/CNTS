@@ -3,7 +3,7 @@ h1 {
 
 h2 {
     font-weight: 700;
-    @include adaptiv-value('font-size', 36, 28, 1);
+    @include adaptiv-value("font-size", 36, 28, 1);
     line-height: 49px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -19,7 +19,7 @@ h3 {
         color: $redcolor;
     }
     &::before {
-        content: url('../img/svg/bloods.svg');
+        content: url("../img/svg/bloods.svg");
         margin-right: 5px;
         vertical-align: middle;
     }
@@ -123,7 +123,7 @@ section {
         span,
         &::before,
         &::after {
-            content: '';
+            content: "";
             transition: all 0.3s ease 0s;
             left: 0;
             position: absolute;
@@ -264,8 +264,8 @@ section {
     position: fixed;
     right: 50px;
     bottom: 30px;
-    @include adaptiv-value('width', 64, 44, 1);
-    @include adaptiv-value('height', 64, 44, 1);
+    @include adaptiv-value("width", 64, 44, 1);
+    @include adaptiv-value("height", 64, 44, 1);
     background-color: $redsecond;
     border-radius: 60px;
     z-index: 10;
@@ -285,7 +285,7 @@ section {
 }
 
 .accordeon {
-    @include adaptiv-value('margin-bottom', 60, 40, 1);
+    @include adaptiv-value("margin-bottom", 60, 40, 1);
     &-item {
         padding: 30px 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -357,7 +357,7 @@ section {
     position: relative;
     margin-bottom: 20px;
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         right: 0;
         top: 50%;
@@ -416,7 +416,7 @@ section {
         color: $redsecond;
         text-align: center;
         &::after {
-            content: ':)';
+            content: ":)";
             margin-left: 5px;
             position: absolute;
             transform: translateY(5px);
@@ -511,12 +511,74 @@ section {
     .list-block {
         &:not(:last-child) {
             border-bottom: 1px solid $redsecond;
-            @include adaptiv-value('padding-bottom', 50, 30, 1);
+            @include adaptiv-value("padding-bottom", 50, 30, 1);
         }
         ul {
             li {
                 margin-bottom: 20px;
             }
+        }
+    }
+}
+
+form {
+    label {
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+    }
+    input {
+        &::placeholder {
+            color: #a2a2a2;
+        }
+    }
+    input[type="date"] {
+        max-width: 30%;
+        display: inline-block;
+        @media (max-width: $mobile) {
+            max-width: 100%;
+        }
+    }
+    textarea {
+        resize: none;
+        height: 120px;
+    }
+    input[type="radio"] {
+        scale: 1.4;
+        accent-color: $maincolor;
+        transition: 0.3s;
+        &:hover {
+            scale: 1.6;
+        }
+    }
+    input:not([type="radio"]),
+    textarea,
+    select {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        appearance: none;
+        border-radius: 4px;
+        @include adaptiv-value("padding", 15, 12, 1);
+        outline: none;
+        transition: 0.3s;
+        &:focus {
+            border-color: $redcolor;
+        }
+    }
+    select {
+        @include adaptiv-value("width", 240, 120, 1);
+    }
+    span.select {
+        position: relative;
+        display: inline-block !important;
+        &::after {
+            content: "\e905";
+            font-family: "icomoon";
+            right: 10px;
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+            font-size: 18px;
         }
     }
 }

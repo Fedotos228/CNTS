@@ -1,0 +1,49 @@
+.schedule {
+    &__form {
+        margin: 50px 0;
+        .form-header {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: none;
+            display: block;
+            width: 100%;
+            text-align: center;
+            @include adaptiv-value("padding-top", 15, 12, 1);
+            @include adaptiv-value("padding-bottom", 15, 12, 1);
+            small {
+                color: $redsecond;
+            }
+        }
+        table {
+            width: 100%;
+            button {
+                margin: 0;
+            }
+            small {
+                color: $redsecond;
+            }
+            tr {
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                span.gray {
+                    color: #a2a2a2;
+                    font-style: italic;
+                }
+                th {
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    @include adaptiv-value("padding-top", 15, 12, 1);
+                    @include adaptiv-value("padding-bottom", 15, 12, 1);
+                    @include adaptiv-value("font-size", 16, 14, 1);
+                }
+                td {
+                    P {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        @include adaptiv-value("gap", 30, 15, 1);
+                    }
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    @include adaptiv-value("padding", 15, 12, 1);
+                }
+            }
+        }
+    }
+}
