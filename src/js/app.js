@@ -55,7 +55,7 @@ new Swiper('.slider-hero__body ', {
     //     },
     // },
     on: {
-        lazyImageReady: function () {
+        lazyImageReady: function() {
             ibg();
         },
     },
@@ -76,7 +76,7 @@ if (pageTitle) {
 
 const navItem = document.querySelectorAll('.nav-list__item');
 
-navItem.forEach((item) => {
+navItem.forEach(item => {
     item.addEventListener('click', () => {
         if (!item.classList.contains('open-submenu')) {
             for (let i = 0; i < navItem.length; i++) {
@@ -88,6 +88,7 @@ navItem.forEach((item) => {
         }
     });
 });
+
 
 const tabs = document.querySelector('.locations__tabs');
 const tabsButtons = document.querySelectorAll('.tabs__button');

@@ -72,7 +72,7 @@
                     padding-left: 20px;
                 }
                 &.with-submenu {
-                    position: relative;
+                    position: relative !important;
                 }
                 span {
                     @include adaptiv-value('font-size', 18, 16, 1);
@@ -84,15 +84,16 @@
                     @media (max-width: 1100px) {
                         border: none;
                     }
-                    a {
+                    button {
                         @include adaptiv-value('font-size', 24, 18, 1);
                     }
                 }
-                >a {
+                button,a {
                     font-size: 12px;
                     font-weight: 600;
                     line-height: 16px;
                     letter-spacing: 0.1em;
+                    text-transform: uppercase
                 }
                 .sublist {
                     position: absolute;
@@ -113,9 +114,14 @@
                             font-size: 12px;
                             transition: 0.2s;
                         }
-                        &:hover {
-                            a {
-                                padding-left: 5px;
+                        &:hover{
+                            background-color: $redcolor;
+                            a{
+                                color: #fff;
+                            }
+                            &:not(:last-child){
+                            border-bottom: 1px solid #fff;
+
                             }
                         }
                     }
@@ -125,7 +131,7 @@
                         transform: rotate(180deg);
                     }
                     .sublist {
-                        max-height: 320px;
+                        max-height: 500px;
                         overflow: auto;
                     }
                 }
@@ -241,6 +247,7 @@
             justify-content: space-between;
             padding: 0 15px;
             .search {
+                width: 100%;
                 height: 60%;
                 display: block;
                 border: none;
